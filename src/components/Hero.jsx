@@ -10,9 +10,15 @@ const Hero = () => {
                     <div className="absolute bottom-0 left-0 z-10 w-full h-full">
                         <div className="hero">
                             <div className="max-w-6xl m-auto mb-8 xl:ml-44 lg:ml-24 sm:ml-0 sm:px-6">
-                                <div className='lg:text-7xl md:text-7xl text-5xl font-semibold'>
+                                <div className='lg:text-7xl md:text-7xl text-5xl flex font-semibold'>
                                     <span className='text-[#06f]'>Dackie</span>
-                                    <span className='text-[#06f]'>Swap</span>
+                                    <div className='slider'>
+                                        <div className='slider-1'>Swap</div>
+                                        <div className='slider-2'>Pad</div>
+                                        <div className='slider-3'>Pool</div>
+                                        <div className='slider-4'>Farm</div>
+                                        <div className='slider-5'>NFT</div>
+                                    </div>
                                 </div>
                                 <div className='md:text-3xl sm:text-2xl md:mt-8 sm:mt-4 flex flex-wrap font-semibold leading-8'>
                                     <span>Swap and earn with the most trusted DEX on</span>
