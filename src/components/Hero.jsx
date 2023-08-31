@@ -16,11 +16,13 @@ const Hero = () => {
                                 </div>
                                 <div className='md:text-3xl sm:text-2xl md:mt-8 sm:mt-4 flex flex-wrap font-semibold leading-8'>
                                     <span>Swap and earn with the most trusted DEX on</span>
-                                    <span className='flex px-3 overflow-hidden'>
-                                        <span className="w-10">
-                                            <img src={base} alt="Base Logo" />
-                                        </span>
-                                        <span>BASE</span>
+                                    <span className='relative inline-block'>
+                                        <div className='flex px-3'>
+                                            <div className="w-10">
+                                                <img src={base} alt="Base Logo" />
+                                            </div>
+                                            <span>BASE</span>
+                                        </div>
                                     </span>
                                 </div>
                                 <div className="md:flex sm:items-center sm:block mt-8">
