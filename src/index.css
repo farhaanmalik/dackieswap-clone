@@ -29,13 +29,15 @@
 body {
     background-color: #f1f5ff;
 }
-.banner{
+
+.banner {
     background: url(assets/bg_banner.jpg) left top / cover no-repeat;
     width: 100%;
     height: 86vh;
     position: relative;
     z-index: 2;
 }
+
 .hero {
     height: 100%;
     display: flex;
@@ -61,8 +63,84 @@ body {
     font-family: 'Shadows Into Light', cursive;
 }
 
+.slider {
+    height: 80px;
+    overflow: hidden;
+}
+
+.slider div {
+    height: 80px;
+}
+
+.slider-1 {
+    color: #06f;
+    animation: slide 7.5s linear infinite;
+}
+.slider-2{
+    color: yellow;
+}
+.slider-4{
+    color: purple;
+}
+.slider-3{
+    color: orange;
+}
+.slider-5{
+    color: red;
+}
+@keyframes slide {
+    0% {
+        margin-top: -400px;
+    }
+    5%{
+        margin-top: -320px;
+    }
+    20%{
+        margin-top: -320px;
+    }
+    25% {
+        margin-top: -240px;
+    }
+    40%{
+        margin-top: -240px;
+    }
+    45%{
+        margin-top: -160px;
+    }
+    60% {
+        margin-top: -160px;
+    }
+    65%{
+        margin-top: -80px;
+    }
+    80%{
+        margin-top: -80px;
+    }
+    85% {
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+
+}
+
+
 @media screen and (max-width: 950px) {
-    .banner{
+    .banner {
         height: 80vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner{
+        height: 78vh;
+    }
+    /* .slider div {
+        height: 80px;
+    } */
+    .slider {
+        height: 50px;
+        overflow: hidden;
     }
 }
