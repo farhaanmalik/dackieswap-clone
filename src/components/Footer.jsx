@@ -5,7 +5,7 @@ import dackie from "../assets/logo-sm.webp"
 const Footer = () => {
     return (
         <>
-            <div className="mt-24 lg:py-5 xsm:pb-16">
+            <div className="mt-24 lg:py-5 sm:pb-16">
                 <div className="flex items-center justify-between px-4 flex-wrap">
                     <div>
                         <a href="#" className="flex items-center">

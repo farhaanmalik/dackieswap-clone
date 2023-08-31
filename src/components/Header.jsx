@@ -27,9 +27,9 @@ const Header = () => {
                             </a>
                         </div>
                         <div className="bg-indigo-100 rounded-md mx-1 mr-2">
-                            <a href="#" className="flex items-center hover:opacity-60 xsm:pr-1">
+                            <a href="#" className="flex items-center hover:opacity-60 sm:pr-1">
                                 <img src={base} alt="Mobile Logo" width={32} />
-                                <span className="text-[#06f] px-2 py-1 pr-3 font-medium sm:block xsm:hidden">Base</span>
+                                <span className="text-[#06f] px-2 py-1 pr-3 font-medium md:block sm:hidden">Base</span>
                             </a>
                         </div>
                         <div className="mx-1">

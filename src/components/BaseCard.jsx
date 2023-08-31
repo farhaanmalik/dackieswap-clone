@@ -6,7 +6,7 @@ const BaseCard = () => {
         <>
             <div className="py-6 m-auto px-6" style={{ maxWidth: "1200px" }}>
                 <div className="md:flex block">
-                    <div className="md:w-6/12 w-full md:h-auto xsm:h-96 relative overflow-hidden bg-white cursor-pointer md:mx-3 mx-0 p-6 shadow-[0px_0px_60px_0px_#0000001a] hover:shadow-[0px_0px_15px_0px_#0066ff92] transition-all duration-200" style={{ borderRadius: "16px" }}>
+                    <div className="md:w-6/12 w-full md:h-auto sm:h-96 relative overflow-hidden bg-white cursor-pointer md:mx-3 mx-0 p-6 shadow-[0px_0px_60px_0px_#0000001a] hover:shadow-[0px_0px_15px_0px_#0066ff92] transition-all duration-200" style={{ borderRadius: "16px" }}>
                         <div className='relative'>
                             <a href='#' className='flex flex-wrap items-center text-4xl font-semibold text-[#06f]'>
                                 <span>#1 Native DEX</span>
