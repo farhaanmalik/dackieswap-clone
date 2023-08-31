@@ -30,10 +30,31 @@ const Navbar = () => {
               Bridges
             </a>
             <ul className="absolute top-8 bg-white z-50 w-72 border border-gray-200 py-1 overflow-hidden hidden group-hover:block transition-block duration-300" style={{ borderRadius: "16px", marginTop: 7 }}>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">BASE Native Bridge</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">Stargate Finance</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">SquidRouter Bridge</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">Orbitor Bridge</a></li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>BASE Native Bridge</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>Stargate Finance</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>SquidRouter Bridge</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>Orbitor Bridge</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
               <li className="py-3 px-4 hover:bg-indigo-100 w-72 border-t border-grey-100"><a href="#" className="py-3 text-blue-600 w-full">Wormhole Bridge</a></li>
             </ul>
           </li>
@@ -42,13 +63,43 @@ const Navbar = () => {
             <a className="py-3 px-4 rounded-md hover:bg-indigo-100" href="">
               <span><i className="fa-solid fa-ellipsis"></i></span>
             </a>
+
             <ul className="absolute top-8 bg-white z-50 w-72 border border-gray-200 py-1 overflow-hidden hidden group-hover:block transition-block duration-300" style={{ borderRadius: "16px", marginTop: 7 }}>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72 border-b border-grey-100"><a href="#" className="py-3 text-blue-600 w-full">Analytics</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">Gecko Terminal</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">DexScreener</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">DefiLlama</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72"><a href="#" className="py-3 text-blue-600 w-full">DeBank</a></li>
-              <li className="py-3 px-4 hover:bg-indigo-100 w-72 border-t border-grey-100"><a href="#" className="py-3 text-blue-600 w-full">Docs</a></li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72 border-b border-grey-100">
+                <a href="#" className="py-3 text-blue-600 w-full">
+                  <span>Analytics</span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>Gecko Terminal</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>DexScreener</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>DefiLlama</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>DeBank</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
+              <li className="py-3 px-4 hover:bg-indigo-100 w-72 border-t border-grey-100">
+                <a href="#" className="flex justify-between text-blue-600 w-full">
+                  <span>Docs</span>
+                  <span><i className="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
