@@ -4,10 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {},
     borderRadius: {
       'md': '18px',
+      '1/2': '50%'
     },
     screens: {
       'sm': '300px',
