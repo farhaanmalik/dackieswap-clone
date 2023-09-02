@@ -28,7 +28,7 @@ const ScrollTop = () => {
     return (
         <>
             {isVisible && (
-                <div className="fixed bottom-28 md:right-20 sm:right-6 text-white px-4 py-2.5 bg-[#06f] cursor-pointer hover:opacity-70" style={{borderRadius:"15px"}} onClick={goTopBtn}>
+                <div className="fixed bottom-28 md:right-20 sm:right-6 text-white dark:text-[#1b204b] px-4 py-2.5 bg-[#06f] cursor-pointer hover:opacity-70" style={{borderRadius:"15px"}} onClick={goTopBtn}>
                     <i className="fa-solid fa-arrow-up"></i>
                 </div>
             )}

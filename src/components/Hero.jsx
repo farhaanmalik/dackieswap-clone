@@ -12,7 +12,7 @@ const Hero = () => {
                             <div className="max-w-6xl m-auto mb-8 xl:ml-44 lg:ml-24 sm:ml-0 sm:px-6">
                                 <div className='lg:text-7xl md:text-7xl text-5xl flex font-semibold'>
                                     <span className='text-[#06f]'>Dackie</span>
-                                    <div className='slider'>
+                                    <div className='text-slider'>
                                         <div className='slider-1'>Swap</div>
                                         <div className='slider-2'>Pad</div>
                                         <div className='slider-3'>Pool</div>
@@ -20,7 +20,7 @@ const Hero = () => {
                                         <div className='slider-5'>NFT</div>
                                     </div>
                                 </div>
-                                <div className='md:text-3xl sm:text-2xl md:mt-8 sm:mt-4 flex flex-wrap font-semibold leading-8'>
+                                <div className='md:text-3xl sm:text-2xl md:mt-8 sm:mt-4 flex flex-wrap font-semibold leading-8 dark:text-white'>
                                     <span>Swap and earn with the most trusted DEX on</span>
                                     <span className='relative inline-block'>
                                         <div className='flex px-3'>
