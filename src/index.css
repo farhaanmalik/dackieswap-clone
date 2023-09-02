@@ -29,6 +29,9 @@
 body {
     background-color: #f1f5ff;
 }
+body .dark{
+    background-color: #101530;
+}
 
 .banner {
     background: url(assets/bg_banner.jpg) left top / cover no-repeat;
@@ -36,6 +39,10 @@ body {
     height: 86vh;
     position: relative;
     z-index: 2;
+}
+
+.dark .banner{
+    background-image: url("https://www.dackieswap.xyz/images/home/dackie/bg_banner_dark.jpg");
 }
 
 .hero {
@@ -59,16 +66,20 @@ body {
     background: linear-gradient(#1652f04d 0%, #f1f5ff 100%);
 }
 
+.dark .hero::after{
+    background: linear-gradient(#1b234b41 0%, #101530 100%);
+}
+
 .ft-duck {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.slider {
+.text-slider {
     height: 80px;
     overflow: hidden;
 }
 
-.slider div {
+.text-slider div {
     height: 80px;
 }
 
@@ -76,53 +87,129 @@ body {
     color: #06f;
     animation: slide 7.5s linear infinite;
 }
-.slider-2{
+
+.slider-2 {
     color: yellow;
 }
-.slider-4{
+
+.slider-4 {
     color: purple;
 }
-.slider-3{
+
+.slider-3 {
     color: orange;
 }
-.slider-5{
+
+.slider-5 {
     color: red;
 }
+
 @keyframes slide {
     0% {
         margin-top: -400px;
     }
-    5%{
+
+    5% {
         margin-top: -320px;
     }
-    20%{
+
+    20% {
         margin-top: -320px;
     }
+
     25% {
         margin-top: -240px;
     }
-    40%{
+
+    40% {
         margin-top: -240px;
     }
-    45%{
+
+    45% {
         margin-top: -160px;
     }
+
     60% {
         margin-top: -160px;
     }
-    65%{
+
+    65% {
         margin-top: -80px;
     }
-    80%{
+
+    80% {
         margin-top: -80px;
     }
+
     85% {
         margin-top: 0px;
     }
-    100%{
+
+    100% {
         margin-top: 0px;
     }
 
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 
@@ -133,13 +220,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .banner{
+    .banner {
         height: 78vh;
     }
+
     /* .slider div {
         height: 80px;
     } */
-    .slider {
+    .text-slider {
         height: 50px;
         overflow: hidden;
     }
